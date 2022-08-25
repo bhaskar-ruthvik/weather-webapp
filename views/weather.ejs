@@ -1,0 +1,32 @@
+<%- include("header") -%>
+
+<body class="weather <%= bgclass %>">
+  <div class="bgimage weather">
+    <h1 class="heading">Weather in <%=name%></h1>
+    <div class="extrainfo">
+      <h2>Wind Speed: <%= windspeed %>m/s</h2>
+      <h2>Feels like: <%= feelslike %>°</h2>
+      <h2>Humidity: <%= humidity %>%</h2>
+    </div>
+        </div>
+    <div class="container weather">
+      <div class="temp-disp">
+        <h1 class="search-heading"> <%= temp %></h1>
+         <h2 class="temp-dec">.<%= tempDec %></h2>
+        <h1 class="search-heading degree">°</h1>
+      </div>
+      <div class="">
+        <h2><%= desc %></h2>
+
+      </div>
+
+
+  </div>
+  <div class="minmax-div">
+      <h2 class="minmax">Min: <%= mintemp %>°    Max: <%= maxtemp %>°</h2>
+  </div>
+
+</body>
+
+
+<%- include("footer") -%>

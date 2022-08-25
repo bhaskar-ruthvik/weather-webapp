@@ -1,0 +1,316 @@
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight:200;
+  text-align:center;
+  z-index:1;
+  color: white;
+}
+
+.search-box{
+animation: searchbox 2s linear;
+  height:3.5rem;
+  width: 20rem;
+  padding-left:2rem;
+  background-color: black;
+  opacity:0.5;
+  color:white;
+  border-radius : 2rem;
+  outline: none;
+  border-width: 0;
+  font-size: 1rem;
+
+}
+input:focus{outline:none;}
+.search-button{
+  height:3.5rem;
+  width: 3.5rem;
+  background-color: transparent;
+  border-width: 0;
+
+  padding-top:0.1rem;
+  color: white;
+  opacity:0.4;
+
+}
+.search-heading{
+  color: white;
+font-size: 10rem;
+margin-bottom : 0;
+margin-top: 0;
+height:100%
+
+
+}
+.heading{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+
+font-size:2.5rem;
+}
+@keyframes searchbox{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:0.5;
+  }
+}
+.bgimage.weather:after{
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+@media (orientation: landscape){
+
+body.main{
+  background-image:url(./bgimage.jpg);
+  background-size: 100%;
+}
+.bgimage:after {
+  	position: absolute;
+  	height: 100%;
+  	width: 100%;
+  	background-color: rgba(0,0,0,.5);
+  	top: 0;
+  	left: 0;
+  	display: block;
+  	content: "";
+    z-index: -1;
+}
+body.weather.rain{
+  background-image: url(./bgimage-portrait1.jpg);
+  background-size: 100%;
+}
+
+body.weather.thunderstorm{
+  background-image: url(./bgimage1.jpg);
+  background-size: 100%;
+}
+
+body.weather.drizzle{
+  background-image: url(./bgimage2.jpg);
+  background-size: 100%;
+}
+body.weather.snow{
+  background-image: url(./bgimage5.jpg);
+  background-size: 100%;
+}
+body.weather.clouds{
+  background-image: url(./bgimage3.jpg);
+  background-size: 100%;
+}
+body.weather.clear{
+  background-image: url(./bgimage6.jpg);
+  background-size: 100%;
+}
+body.weather.atmosphere{
+  background-image: url(./bgimage7.jpg);
+  background-size: 100%;
+}}
+
+
+.form-div{
+
+  position: absolute;
+  top:43%;
+  bottom:40%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+.box-div{
+  position:relative;
+  z-index:2  ;
+  display: flex;
+}
+.heading-div{
+
+  text-align: center;
+  width:100%;
+  position: absolute;
+  top:30%;
+  bottom:65%;
+}
+.button-div{
+  position: relative;
+  bottom: 3.6rem;
+  left: 18rem;
+  z-index:2;
+
+  padding-right:0.5rem;
+}
+
+@media (orientation:portrait){
+  html,body{
+    height:100%;
+  }
+  body.main{
+    background-image: url(./bgimage-portrait2.jpg);
+    background-size: auto 100%;
+    background-repeat:no-repeat;
+    background-position: center;
+
+  }
+  .bgimage:after {
+    	position: absolute;
+    	height: 100%;
+    	width: 100%;
+    	background-color: rgba(0,0,0,.6);
+    	top: 0;
+    	left: 0;
+    	display: block;
+    	content: "";
+      z-index: -1;
+  }
+  .form-div{
+    position: absolute;
+    top:38%;
+    bottom:60%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+  }
+  body.weather.rain{
+    background-image: url(./bgimage-portrait5.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  body.weather.thunderstorm{
+    background-image: url(./bgimage-portrait7.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+
+  body.weather.drizzle{
+    background-image: url(./bgimage-portrait.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  body.weather.snow{
+    background-image: url(./bgimage-portrait6.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  body.weather.clouds{
+    background-image: url(./bgimage-portrait4.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  body.weather.clear{
+    background-image: url(./bgimage-portrait8.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+  body.weather.atmosphere{
+    background-image: url(./bgimage-portrait3.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+h2{
+  font-family: 'Catamaran', sans-serif;
+  font-weight:200;
+  text-align:center;
+  color: white;
+  vertical-align: middle;
+  font-size: 2rem;
+}
+
+
+.container.weather{
+  position: absolute;
+  top:35%;
+  width:100%;
+
+
+}
+
+.temp-disp{
+height:11rem;
+display: flex;
+justify-content: center;
+}
+
+.temp-dec{
+  margin-top: 7rem;
+  font-size: 2.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search-heading.degree{
+  font-size:5rem;
+  height: 9rem;
+  margin-top: 2.2rem;
+}
+
+
+.time{
+  position: absolute;
+  top:2%;
+  width:100%;
+  text-align: center;
+}
+
+.time-head{
+  font-family: "Poppins" , sans-serif;
+  font-weight: 200;
+}
+
+.minmax{
+  font-family: "Montserrat",sans-serif;
+  font-size:1.5rem;
+  font-weight: 400;
+  opacity:0.8;
+}
+.minmax-div{
+  position:absolute;
+  bottom:0;
+  text-align:center;
+  width:100%;
+}
+.extrainfo{
+  position: absolute;
+  text-align: right;
+  width:98.5%;
+  top: 2%;
+  z-index:1;
+
+}
+.extrainfo h2{
+  font-family : "Montserrat",sans-serif;
+  font-weight:200;
+  line-height:1rem;
+  font-size:1.2rem;
+  text-align: right;
+}
+
+.error{
+  opacity:0;
+
+
+}
+.error.show{
+  animation : error 5s linear;
+}
+
+@keyframes error{
+  from {
+    opacity:1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (orientation:landscape) and (min-device-aspect-ratio: 9/21) and (max-device-aspect-ratio:9/18){
+
+
+  body.main{
+    background-image:url(./bgimage-portrait2.jpg);
+    background-size: 100%;
+
+  }
+}

@@ -1,0 +1,35 @@
+<%- include("header") -%>
+<!--
+<div class="main-head">
+  <h1 class="heading">Want to know the current weather?</h1>
+</div> -->
+<body class="main">
+
+<div class="bgimage">
+<div class="container">
+  <div class="heading-div">
+    <h1 class="heading">Want to know the current weather?</h1>
+  </div>
+  <div class="form-div">
+    <form class="" action="/" method="post">
+      <div class="box-div">
+        <input type="text" name="searchBox" placeholder="Enter a location" class="search-box" autocomplete="off">
+      </div>
+
+      <div class="button-div">
+      <button type="submit" name="button" class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+    </form>
+  </div>
+
+</div>
+<div class="time">
+  <h1 class="time-head"><%= time %>  <%= date %></h1>
+  <h2 class="error <%= errcl %>" id="error"><%= err %></h2>
+</div>
+</div>
+</body>
+
+
+<%- include("footer") -%>
