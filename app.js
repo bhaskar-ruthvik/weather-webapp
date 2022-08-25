@@ -1,3 +1,6 @@
+
+
+require("dotenv").config()
 const express = require("express");
 const app = express();
 const https=require("https");
@@ -103,7 +106,7 @@ app.get("/",function(req,res){
 })
 
 app.post("/",function(req,res){
-  const apiKey="028ac2f69f34263182e0c63c70b14b92";
+  const apiKey= process.env.API_KEY;
   const units = "metric";
   const location = req.body.searchBox;
 
