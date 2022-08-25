@@ -33,7 +33,7 @@ function getDay(day){
 }
 
 function getMonth(month){
-  switch(month){
+  switch(month+1){
     case 1:
       return "January";
       break;
@@ -160,10 +160,7 @@ app.post("/",function(req,res){
   })
 })
 
-let port = process.env.PORT
-if(port == null || port==""){
-  port = 3000;
-}
-app.listen(port,function(){
+const PORT = process.env.PORT || 3000
+app.listen(PORT,function(){
   console.log("Server has started successfully");
 })
